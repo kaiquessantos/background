@@ -90,13 +90,13 @@ aside > h3 {
 section#detail {
   position: absolute;
   background-image: linear-gradient(151deg, var(--cor-4), var(--cor-5), white 80%);
-  width: 400px;
+  max-width: 400px;
   border-radius: 5px;
 
   left: 50%;
   top: 50%;
 
-  transform: translate(-30%, 56%);
+  transform: translate(-30%, 46%);
   padding: 8px;
 }
 
