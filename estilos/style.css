@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --cor-destaque: #260A0F;
+  --cor-2: #73261F;
+  --cor-3: #ff2600;
+  --cor-4: #F27C38;
+  --cor-5: #F2C166;
+
+  --font-title: Verdana, Tahoma, sans-serif;
+  --font-text: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--cor-destaque);
+  background-image: url('../imagens/lava-volcano.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-text);
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor-2), var(--cor-5));
+  padding: 20px;
+}
+
+header h1 {
+  font-family: var(--font-title);
+  color: var(--cor-destaque);
+  font-size: 2.4em;
+}
+
+header p {
+  font-weight: bold;
+  color: var(--cor-destaque);
+}
+
+main {
+  background-color: white;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+main p {
+  text-align: justify;
+  line-height: 1.5em;
+  text-indent: 17px;
+}
+
+section#power > h1.power{
+  background-image: linear-gradient(to right, var(--cor-2), var(--cor-5));
+  padding: 7px;
+  border-radius: 5px 0px 5px 0px;
+  text-align: center;
+  color: var(--cor-destaque);
+  font-size: 2.4em;
+  margin-bottom: 30px;
+}
+
+article > h2 {
+  padding: 10px;
+  margin-bottom: 6px;
+  color: var(--cor-destaque);
+  border-radius: 4px;
+  font-family: var(--font-title);
+  font-size: 1.6em;
+}
+
+.line {
+  border: 1px solid var(--cor-destaque);
+  margin-bottom: 16px;
+}
+
+aside > h3 {
+  padding: 10px;
+  font-family: var(--font-title);
+  font-size: 1.3em;
+  color: var(--cor-destaque);
+}
+
+section#detail {
+  position: absolute;
+  background-image: linear-gradient(151deg, var(--cor-4), var(--cor-5), white 80%);
+  width: 400px;
+  border-radius: 5px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-30%, 56%);
+  padding: 8px;
+}
+
+section#inspo > h1 {
+  border-radius: 5px 0px 5px 0px;
+  margin: 250px auto 16px auto;
+  padding: 7px;
+  color: var(--cor-destaque);
+  font-size: 2.2em;
+  font-family: var(--font-title);
+  text-align: center;
+  background-image: linear-gradient(to right, var(--cor-2), var(--cor-5));
+}
+
+footer {
+  padding: 35px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f84b2d;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.7s;
+}
+
+footer a:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-5);
+}
+
+footer a::after {
+  content: ' \1F517';
+}
+
